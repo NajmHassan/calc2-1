@@ -23,18 +23,27 @@ def test_calculator_add():
 
 def test_calculator_subtract():
     """Testing the subtract method of the calculator"""
+    # Arrange
     calc = Calculator()
+    # Act
     calc.subtract_number(1)
+    # Assert
     assert calc.get_result() == -1
 
 def test_calculator_multiply():
     """Testing the multiplication method of the calculator"""
+    # Arrange
     calc = Calculator()
+    # Act
     calc.multiply_number(2)
+    # Assert
     assert calc.get_result() == 0
 
 def test_calculator_divide():
     """Testing the division method of the calculator"""
+    # Arrange
     calc = Calculator()
+    # Act
     calc.divide_number(1)
+    # Assert
     assert calc.get_result() == 0
