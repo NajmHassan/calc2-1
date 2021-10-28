@@ -12,22 +12,19 @@ class Calculator:
         """ Get Result of Calculation"""
         return self.result
 
-    def add_number(self, value_a):
+    def add_number(self, value_a, value_b):
         """ adds number to result"""
-        self.result = self.result + value_a
+        self.result = value_b + value_a
         return self.result
-    def subtract_number(self, value_a):
+    def subtract_number(self, value_a, value_b):
         """ subtract number from result"""
-        self.result = self.result - value_a
+        self.result = value_a - value_b
         return self.result
-    def multiply_number(self, value_a):
+    def multiply_number(self, value_a, value_b):
         """ Multiply number from result"""
-        self.result = self.result * value_a
+        self.result = value_b * value_a
         return self.result
-    def divide_number(self, value_a):
+    def divide_number(self, value_a, value_b):
         """ Divide number from result"""
-        if value_a != 0:
-            self.result = self.result / value_a
-        else:
-            self.result = -1
+        self.result = value_a / value_b
         return self.result
