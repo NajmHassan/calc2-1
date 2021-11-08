@@ -54,3 +54,7 @@ def test_calculator_subtract():
 def test_calculator_multiply():
     """ tests multiplication of two numbers"""
     assert Calculator.multiply_numbers(1,2) == 2
+
+def test_calculator_divide():
+    """ tests multiplication of two numbers"""
+    assert Calculator.divide_numbers(2,1) == 2
