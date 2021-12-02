@@ -6,4 +6,4 @@ class Division(Calculation):
     """The addition class has one method to divide two numbers"""
     def get_result(self):
         """incapsulation method"""
-        return reduce(lambda x, y: x / y, self.values) #could be wrong
+        return round(reduce(lambda x, y: x / y, self.values),9) #could be wrong

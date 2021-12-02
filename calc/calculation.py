@@ -5,6 +5,7 @@ class Calculation:
     def __init__(self,values: tuple):
         """constructor for Calculation Class"""
         self.values = Calculation.convert_floats(values)
+
     @classmethod
     def create(cls, values: tuple):
         """ factory method"""
@@ -15,4 +16,4 @@ class Calculation:
         lst = []
         for item in values:
             lst.append(float(item))
-        return lst
+        return tuple(lst)

@@ -31,5 +31,6 @@ def test_clear_calculation_history(clear_history_fixture, addition_calculation_f
     assert Calculations.clear_history() is True
 
 def test_get_calculation(clear_history_fixture, addition_calculation_fixture):
+
     """testing getting a specific calculation out of the history"""
-    assert Calculations.get_calculation(0).get_result() == 7.0 #initial calculation
+    assert Calculations.get_calculation(0) == 7.0 #initial calculation

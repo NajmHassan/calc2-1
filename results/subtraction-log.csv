@@ -1,0 +1,11 @@
+,value_1,value_2,result,myResult,time_stamp,path to file,operation
+0,4,57,-53,-53.0,2021-12-02 04:37:08.688159,./csv_files/subtraction_test.csv,subtraction
+1,74,26,48,48.0,2021-12-02 04:37:08.688159,./csv_files/subtraction_test.csv,subtraction
+2,72,61,11,11.0,2021-12-02 04:37:08.688159,./csv_files/subtraction_test.csv,subtraction
+3,14,15,-1,-1.0,2021-12-02 04:37:08.688159,./csv_files/subtraction_test.csv,subtraction
+4,71,56,15,15.0,2021-12-02 04:37:08.688159,./csv_files/subtraction_test.csv,subtraction
+5,68,14,54,54.0,2021-12-02 04:37:08.688159,./csv_files/subtraction_test.csv,subtraction
+6,64,94,-30,-30.0,2021-12-02 04:37:08.688159,./csv_files/subtraction_test.csv,subtraction
+7,40,89,-49,-49.0,2021-12-02 04:37:08.688159,./csv_files/subtraction_test.csv,subtraction
+8,15,83,-68,-68.0,2021-12-02 04:37:08.688159,./csv_files/subtraction_test.csv,subtraction
+9,19,1,18,18.0,2021-12-02 04:37:08.688159,./csv_files/subtraction_test.csv,subtraction

@@ -1,29 +1,19 @@
 """testing division class"""
 import pytest
-from calc.divide import Division
-def test_calculation_division():
-    """testing that our calculator has a static method for addition"""
-    #Arrange
-    mynumbers = (4.0,2.0)
-    # Act
-    division = Division(mynumbers)
-    #Assert
-    assert division.get_result() == 2.0
+from calculator.calculator import Calculator
+from history.calculations import Calculations
 
-def test_calculation_division2():
-    """testing that our calculator has a static method for addition"""
-    #Arrange
-    mynumbers = (4,2.0) # does not matter if its a float or int, it will be converted regardless
-    # Act
-    division = Division(mynumbers)
-    #Assert
-    assert division.get_result() == 2.0
-def test_calculation_division_by_zero():
-    """testing that our calculator has a static method for addition"""
-    #Arrange
-    mynumbers = (4,0) # does not matter if its a float or int, it will be converted regardless
-    # Act
-    division = Division(mynumbers)
-    #Assert
-    with pytest.raises(ZeroDivisionError):
-        division.get_result()
+
+def test_csvreader_divide(create_csvreader, clear_history_fixture):
+    """testing with csv file"""
+    for index, row in create_csvreader.show_data_frame("./csv_files/division_test.csv").iterrows():
+        index =index+0
+        divide = Calculator.divide_number((row['value_1'], row['value_2']))
+        try:
+            assert divide == row['result']
+        except ZeroDivisionError:
+            with pytest.raises(ZeroDivisionError):
+                assert divide.get_result() is True
+    assert Calculations.count_history() == 10
+    create_csvreader.edit_data_frame("./csv_files/division_test.csv", 'division')
+    create_csvreader.move_file("division_test.csv")

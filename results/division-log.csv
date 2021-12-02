@@ -1,0 +1,11 @@
+,value_1,value_2,result,myResult,time_stamp,path to file,operation
+0,35,51,0.68627451,0.68627451,2021-12-02 04:37:08.620891,./csv_files/division_test.csv,division
+1,95,94,1.010638298,1.010638298,2021-12-02 04:37:08.620891,./csv_files/division_test.csv,division
+2,50,70,0.714285714,0.714285714,2021-12-02 04:37:08.620891,./csv_files/division_test.csv,division
+3,61,22,2.772727273,2.772727273,2021-12-02 04:37:08.620891,./csv_files/division_test.csv,division
+4,53,94,0.563829787,0.563829787,2021-12-02 04:37:08.620891,./csv_files/division_test.csv,division
+5,90,1,90.0,90.0,2021-12-02 04:37:08.620891,./csv_files/division_test.csv,division
+6,8,20,0.4,0.4,2021-12-02 04:37:08.620891,./csv_files/division_test.csv,division
+7,2,53,0.037735849,0.037735849,2021-12-02 04:37:08.620891,./csv_files/division_test.csv,division
+8,11,31,0.35483871,0.35483871,2021-12-02 04:37:08.620891,./csv_files/division_test.csv,division
+9,10,2,5.0,5.0,2021-12-02 04:37:08.620891,./csv_files/division_test.csv,division

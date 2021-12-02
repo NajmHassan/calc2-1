@@ -1,0 +1,11 @@
+,value_1,value_2,result,myResult,time_stamp,path to file,operation
+0,61,20,1220,1220.0,2021-12-02 04:37:08.658803,./csv_files/multiplication_test.csv,multiplication
+1,5,93,465,465.0,2021-12-02 04:37:08.658803,./csv_files/multiplication_test.csv,multiplication
+2,50,63,3150,3150.0,2021-12-02 04:37:08.658803,./csv_files/multiplication_test.csv,multiplication
+3,98,63,6174,6174.0,2021-12-02 04:37:08.658803,./csv_files/multiplication_test.csv,multiplication
+4,42,52,2184,2184.0,2021-12-02 04:37:08.658803,./csv_files/multiplication_test.csv,multiplication
+5,22,41,902,902.0,2021-12-02 04:37:08.658803,./csv_files/multiplication_test.csv,multiplication
+6,68,73,4964,4964.0,2021-12-02 04:37:08.658803,./csv_files/multiplication_test.csv,multiplication
+7,2,78,156,156.0,2021-12-02 04:37:08.658803,./csv_files/multiplication_test.csv,multiplication
+8,23,65,1495,1495.0,2021-12-02 04:37:08.658803,./csv_files/multiplication_test.csv,multiplication
+9,20,4,80,80.0,2021-12-02 04:37:08.658803,./csv_files/multiplication_test.csv,multiplication

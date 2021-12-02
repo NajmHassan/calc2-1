@@ -1,0 +1,11 @@
+,value_1,value_2,result,myResult,time_stamp,path to file,operation
+0,11,5,16,16.0,2021-12-02 04:37:08.380862,./csv_files/addition_test.csv,addition
+1,97,38,135,135.0,2021-12-02 04:37:08.380862,./csv_files/addition_test.csv,addition
+2,53,41,94,94.0,2021-12-02 04:37:08.380862,./csv_files/addition_test.csv,addition
+3,44,86,130,130.0,2021-12-02 04:37:08.380862,./csv_files/addition_test.csv,addition
+4,72,4,76,76.0,2021-12-02 04:37:08.380862,./csv_files/addition_test.csv,addition
+5,17,68,85,85.0,2021-12-02 04:37:08.380862,./csv_files/addition_test.csv,addition
+6,56,40,96,96.0,2021-12-02 04:37:08.380862,./csv_files/addition_test.csv,addition
+7,49,11,60,60.0,2021-12-02 04:37:08.380862,./csv_files/addition_test.csv,addition
+8,34,62,96,96.0,2021-12-02 04:37:08.380862,./csv_files/addition_test.csv,addition
+9,32,60,92,92.0,2021-12-02 04:37:08.380862,./csv_files/addition_test.csv,addition

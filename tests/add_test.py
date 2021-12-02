@@ -1,29 +1,17 @@
 """testing Addition class"""
 
-from calc.addition import Addition
-def test_calculation_addition():
-    """testing that our calculator has a static method for addition"""
-    #Arrange
-    mynumbers = (1.0,2.0)
-    # Act
-    addition = Addition(mynumbers)
-    #Assert
-    assert addition.get_result() == 3.0
+from calculator.calculator import Calculator
+from history.calculations import Calculations
 
-def test_calculation_addition2():
-    """testing that our calculator has a static method for addition"""
-    #Arrange
-    mynumbers = (1.0,2.0,3.0)
-    # Act
-    addition = Addition(mynumbers)
-    #Assert
-    assert addition.get_result() == 6.0
 
-def test_calculation_addition3():
-    """testing that our calculator has a static method for addition"""
-    #Arrange
-    mynumbers = (1,2.0)
-    # Act
-    addition = Addition(mynumbers)
-    #Assert
-    assert addition.get_result() == 3.0
+def test_csvreader_add(create_csvreader,clear_history_fixture):
+    """testing with csv file"""
+    for index, row in create_csvreader.show_data_frame("./csv_files/addition_test.csv").iterrows():
+        index = index+0
+        tuple_values = (row['value_1'], row['value_2'])
+        addition = Calculator.add_number(tuple_values)
+        result = addition
+        assert result == row['result']
+    assert Calculations.count_history() == 10
+    create_csvreader.edit_data_frame("./csv_files/addition_test.csv", "addition")
+    create_csvreader.move_file("addition_test.csv")

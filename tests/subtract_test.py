@@ -1,20 +1,15 @@
 """testing subtraction class"""
-from calc.subtraction import Subtraction
 
-def test_calculation_subtraction():
-    """testing that our calculator has a static method for addition"""
-    #Arrange
-    mynumbers = (2.0,1.0)
-    # Act
-    subtraction = Subtraction(mynumbers)
-    #Assert
-    assert subtraction.get_result() == 1.0
+from history.calculations import Calculations
+from calculator.calculator import Calculator
 
-def test_calculation_subtraction2():
-    """testing that our calculator has a static method for addition"""
-    #Arrange
-    mynumbers = (2,2.0) # does not matter if its a float or int, it will be converted regardless
-    # Act
-    subtraction = Subtraction(mynumbers)
-    #Assert
-    assert subtraction.get_result() == 0.0
+def test_csvreader_subtraction(create_csvreader,clear_history_fixture):
+    """testing with csv file"""
+    data_frame = create_csvreader.show_data_frame("./csv_files/subtraction_test.csv")
+    for index, row in data_frame.iterrows():
+        index = index + 0
+        sub = Calculator.subtract_number((row['value_1'], row['value_2']))
+        assert sub == row['result']
+    assert Calculations.count_history() == 10
+    create_csvreader.edit_data_frame("./csv_files/subtraction_test.csv", "subtraction")
+    create_csvreader.move_file("subtraction_test.csv")
