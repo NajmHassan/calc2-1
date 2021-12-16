@@ -1,9 +1,7 @@
-Calculator Project Setup
+Calculator Project Setup using Object Oriented Programming
 
-[![Build Status](https://app.travis-ci.com/NajmHassan/calc2-1.svg?branch=main)](https://app.travis-ci.com/NajmHassan/calc2-1)
+Code was written in Python, using Flask and Jinja to view in the browser 
+a simple calculator,
 
-To run tests, Lint, and Coverage report use this command:
-
-pytest --pylint --cov
-
-.pylintrc is the config for pylint .coveragerc is the config for coverage setup.py is a config file for pytest
+Sample video:
+https://drive.google.com/file/d/1HsW2enfOm-J6giOJLH-4e9yXT_o1MFL3/view?usp=sharing
