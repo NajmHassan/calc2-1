@@ -1,0 +1,100 @@
+{% extends "nav.html" %}
+{% block content %}
+<body>
+
+  
+<div class="container">
+	<h1>My Example of Calculator in Python</h1>
+	My calculator program demonstrates the principles
+	of object oriented programming such as Encapsulation, 
+	Inheritance, Polymorphism, and Abstraction
+	
+	
+	<h3>Inheritance</h3>
+	<p>In the calculator program, i used Inheritance to create my addition,
+		subtraction, multiplication, and divison classes. they inherit the
+		calcuations class.
+	</p>
+	<p style = "font-family:'Courier New';">
+		class Addition(Calculation): <br>
+		"""The addition class has one method inherit Calculation class"""<br>
+		def get_result(self):<br>
+			"""encapsulation method"""<br>
+			return reduce(lambda x, y:x + y, self.values)
+	</p>
+	<p>as shown above in the code, it on the first line when i declared the class with
+		the parameter Calculation, that means i inherited all of Calculation class. so my addition class is a part of this class
+	</p>
+
+	<h3>Encapsulation</h3>
+	<p> In my program, I used encapsulation in my addition, subctraction, etc. classes for my get_result() method. this method
+		calculates the value of the calcuation given. it is encapsulated because only  the object created has access to  this method.
+	</p>
+
+	<p style = "font-family:'Courier New';">
+		class Subtraction(Calculation): <br>
+		"""The Subtraction class has one method inherit Calculation class"""<br>
+		def get_result(self):<br>
+			"""encapsulation method"""<br>
+			return reduce(lambda x, y:x - y, self.values)
+	</p>
+
+	<h3>Polymorphism</h3>
+	<p> in my program, i have considered Polymorphism.  the idea of it that we can take 
+		parameters that  are not just integers. what if the user wants to add more than one number?
+		so i have decided  that the user can give any number of paramters to the function and in my class,
+		i will put all the paramters inside a tuple. so no matter how many paramters are given,
+		my program does not break.
+	</p>
+
+	<p style = "font-family:'Courier New';">
+		class Calculation:<br>
+    """Calculation class """<br>
+    def __init__(self,values: tuple):<br>
+        """constructor for Calculation Class"""<br>
+        self.values = Calculation.convert_floats(values)<br>
+    @classmethod<br>
+    def create(cls, values: tuple):<br>
+        """ factory method"""<br>
+        return cls(values)<br>
+    @staticmethod<br>
+    def convert_floats(values):<br>
+        """ converts input from ints to floats and puts them in a lst"""<br>
+        lst = []<br>
+        for item in values:<br>
+            lst.append(float(item))<br>
+        return lst<br>
+
+	</p>
+	<p>as shown here, in conver_floats method i concatinate them in floads and return them as a lst  of floats</p>
+
+
+	<h3>Abstraction</h3>
+	<p> Abstraction is a blueprint class. it is  a class that is just there to keep things organized.</p>
+	<p style = "font-family:'Courier New';">
+		class Calculator:<br>
+    """ This is the Calculator class"""<br>
+
+    @staticmethod<br>
+    def add_number(arg):<br>
+        """ adds list of numbers"""<br>
+        return Calculations.add_addition_calculation(arg)<br>
+    @staticmethod<br>
+    def subtract_number(arg):<br>
+        """ subtract a list of numbers"""<br>
+        return Calculations.add_subtraction_calculation(arg)<br>
+    @staticmethod<br>
+    def multiply_number(arg):<br>
+        """ mulitply a list of numbers"""<br>
+        return Calculations.add_multiply_calculation(arg)<br>
+    @staticmethod<br>
+    def divide_number(arg):<br>
+        """ divide list of numbers"""
+        return Calculations.add_division_calculation(arg)<br>
+
+
+	</p>
+
+</div>
+
+{% endblock %}

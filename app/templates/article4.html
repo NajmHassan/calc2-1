@@ -1,0 +1,95 @@
+{% extends "nav.html" %}
+{% block content %}
+<body>
+
+  
+<div class="container">
+	<h1>SOLID Object Oriented Design</h1>
+	
+	
+	 
+	 <h3> What is SOLID? </h3>
+	<p> SOLID is an acronym for the first five object-oriented design (OOD) principles by Robert C. Martin AKA Uncle Bob!
+		<br>
+		These principles establish practices that lend to developing
+		 software with considerations for maintaining and extending
+		 as the project grows. Adopting these practices can also 
+		contribute to avoiding code smells, refactoring code, and 
+		Agile or Adaptive software development.
+		
+		<br>
+		<br>
+		<strong>S</strong>ingle-responsiblity Principle: A class should have one and only one reason to change, meaning that a class should have only one job.<br><br>
+		in this Principle, i made sure that both my classes, Calculator to be
+		 my front-end basically, where it would call the Calculations class.
+		  the calculatiions class is the class that calculates the 
+		  "equation". In addition, most of my methods are  meant to do one
+		   job and one job only.<br>
+		   <br>
+
+		   <p style = "font-family:'Courier New';">
+		@staticmethod<br>
+		def add_number(arg):<br>
+			""" adds list of numbers"""<br>
+			return Calculations.add_addition_calculation(arg)<br>
+		@staticmethod<br>
+		def subtract_number(arg):<br>
+			""" subtract a list of numbers"""<br>
+			return Calculations.add_subtraction_calculation(arg)<br>
+		@staticmethod<br>
+		def multiply_number(arg):<br>
+			""" mulitply a list of numbers"""<br>
+			return Calculations.add_multiply_calculation(arg)<br>
+		@staticmethod<br>
+		def divide_number(arg):<br>
+			""" divide list of numbers"""
+			return Calculations.add_division_calculation(arg)<br>
+		</p>
+	
+
+
+
+		<strong>O</strong>pen-closed Principle: Objects or entities should be open for extension but closed for modification.<br><br>
+		Both of my classes are generalized, not specific to a specific case.
+		therefore, my classes do not need to modified. they can be extended,
+		which is always helpful to add more features in the code<br>
+
+		<p style = "font-family:'Courier New';">
+		class Calculator:<br>
+    """ This is the Calculator class"""<br>
+
+    @staticmethod<br>
+    def add_number(arg):<br>
+        """ adds list of numbers"""<br>
+        return Calculations.add_addition_calculation(arg)<br>
+    @staticmethod<br>
+    def subtract_number(arg):<br>
+        """ subtract a list of numbers"""<br>
+        return Calculations.add_subtraction_calculation(arg)<br>
+    @staticmethod<br>
+    def multiply_number(arg):<br>
+        """ mulitply a list of numbers"""<br>
+        return Calculations.add_multiply_calculation(arg)<br>
+    @staticmethod<br>
+    def divide_number(arg):<br>
+        """ divide list of numbers"""
+        return Calculations.add_division_calculation(arg)<br>
+
+
+	</p>
+	<p> as shown above, every class method does not need to be modified
+		since it does it own job, and if we add anpther feature, we add another
+		function!
+	</p>
+
+
+		<strong>L</strong >iskov Substitution Principle: Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.<br><br>
+			was not used in the calcutor program yet<br><br>
+		<strong>I</strong>nterface Segregation Principle: Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.<br><br>
+		was not used in the calcutor program yet<br><br>
+		<strong>D</strong>ependency Inversion Principle: <br>
+		<br>was not used in the calcutor program yet<br>
+	</p>
+
+</div>
+{% endblock %}

@@ -29,3 +29,17 @@ class Csvreader:
     def move_file(filename):
         """moving file to done folder"""
         Path("./csv_files/"+filename).rename("./csv_files_done/"+filename)
+
+    @staticmethod
+    def add_to_csv_file(operation,value1,value2, result):
+        with open("./csvclass/history.csv", 'a') as f:
+            df = pd.DataFrame({'value1': [float(value1)],
+                               'value2': [float(value2)],
+                               'result': [result],
+                               'operation': [operation]})
+            df.to_csv('./csvclass/history.csv', mode='a', index=False, header=False)
+    @staticmethod
+    def get_dataframe():
+        data_set = pd.read_csv(str("./csvclass/history.csv"))
+        data_frame = pd.DataFrame(data_set)
+        return data_frame.values.tolist()

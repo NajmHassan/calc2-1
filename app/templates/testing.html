@@ -1,0 +1,39 @@
+{% extends "nav.html" %}
+{% block content %}
+<div class="container">
+	<h1>Testing your Code</h1>
+	
+	<h3> Why should we test our code?</h3>
+	
+	<p>Testing code in important to identify the corner cases in your 
+		methods and actually show if they are handled correctly. 
+		Testing in python is important because when code goes into 
+		production, It will go through a hundred thousands of data. 
+		So before it goes to production, it has to be tested with many 
+		different cases and different data types in order to ensure It
+		will not break or fail. 
+	</p>
+
+	<h3> How to test code?</h3>
+	
+	<p> <strong>AAA Testing!</strong> <br>The AAA (Arrange, Act, Assert) 
+		pattern is a common way of writing unit tests for a method 
+		under test. <br>
+		<strong>Arrange</strong> section of a unit test method initializes objects and sets the value of the data that is passed to the method under test.<br>
+		<strong>Act</strong> section invokes the method under test with the arranged parameters.<br>
+		<strong> Assert</strong> section verifies that the action of the method under test behaves as expected. <br>
+	</p>
+
+	<h3> External Data for testing</h3>
+	
+	<p>
+		When it comes to testing, we need large amounts of data to
+		run in our code. so creating methods with random numbers to test code is not the
+		greatest way to test  our code. Instead we can use CSV files,
+		or excel, read  it through python and test it our code.
+	</p>
+
+	 
+
+</div>
+{% endblock %}
